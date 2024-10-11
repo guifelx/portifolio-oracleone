@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+
+.links-menu-celular {
+    display: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 10px;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+.cabecalho h2 {
+    margin-left: 200px;
+}
+
+.cabecalho-titulo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.cabecalho-menu {
+    display: flex;
+    gap: 10px;
+    margin-right: 200px;
+}
+
+.cabecalho-menu a:hover {
+    color: #9970f9;
+    text-shadow: none;
+}
+
+.cabecalho-menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.apresentacao {
+    padding-bottom: 40px;
+    display: flex;
+    gap: 20px;
+    margin: 150px 200px 0px 200px;
+}
+
+.apresentacao-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 2em;
+}
+
+.apresentacao img {
+    border-radius: 100%;
+}
+
+.sobre-mim {
+    margin: 50px 200px;
+    line-height: 2em;
+    height: 70%;
+}
+
+.sobre-mim-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #9970f9;
+}
+
+.sobre-mim-link:hover {
+    text-decoration: underline;
+    color: #9970f9;
+    text-shadow: none;
+}
+
+.skills,
+.hobbies,
+.formacao {
+    margin: 50px 200px;
+    line-height: 2em;
+    height: 300px;
+}
+
+.skills {
+    padding-top: 50px;
+}
+
+.skills h2,
+.hobbies h2,
+.formacao h2,
+.projetos h2 {
+    text-align: center;
+    height: 100px;
+}
+
+.skills-div-img,
+.hobbies-div-img,
+.formacao-img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.imagens-skills {
+    width: 100px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 200px;
+    line-height: 2em;
+}
+
+.projetos-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.projetos-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.projetos-botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+    border: 0.7px solid rgba(0, 0, 0, 0.164);
+    border-radius: 5%;
+    padding: 15px;
+    line-height: 2em;
+}
+
+button {
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 5%;
+    border: 0.5px solid;
+    cursor: pointer;
+}
+
+.projetos-botoes-div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.button1 {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: white;
+}
+
+.button1:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+    transition-duration: 0.3s;
+}
+
+.button2 {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+}
+
+.button2:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+    transition-duration: 0.3s;
+}
+
+
+.botao-enviar {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.botao-enviar:hover {
+    background-color: #9970f9;
+    color: #000000;
+    border-color: #000000;
+    transition-duration: 0.3s;
+}
+
+.email {
+    margin: 150px 200px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.input-email {
+    width: 420px;
+    padding: 10px 10px 20px 10px;
+}
+
+.email-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    line-height: 25px;
+}
+
+textarea {
+    width: 420px;
+    padding: 10px;
+    height: 120px;
+}
+
+.rodape {
+    padding: 30px;
+    text-align: center;
+}
+
+@media (max-width: 1215px) {
+
+    .cabecalho-menu a {
+        display: none;
+    }
+
+    .cabecalho-menu a:nth-child(6) {
+        display: block;
+    }
+}
+
+@media(max-width: 1033px) {
+    .imagem-perfil {
+        width: 25%;
+        height: 25%;
+    }
+}
+
+@media(max-width: 1145px) {
+    .projetos-div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagens-projetos {
+        width: 500px;
+    }
+
+    .projetos-botoes {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        background: radial-gradient(circle, #d3d3d346 30%, rgba(255, 0, 0, 0) 100%);
+    }
+
+    .imagem-telefone {
+        display: none;
+    }
+
+    .input-email,
+    textarea {
+        width: 100%;
+    }
+
+    .skills-div-img,
+    .hobbies-div-img {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .hobbies,
+    .skills,
+    .formacao .projetos {
+        height: 50%;
+    }
+
+    .imagens-skills,
+    .imagens-hobbies {
+        text-align: start;
+        width: 100px;
+        background-color: #d3d3d346;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 867px) {
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apresentacao-div {
+        order: 2;
+    }
+
+    .imagem-perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px
+    }
+
+    .cabecalho-menu {
+        margin-right: 0;
+        margin-left: 200px;
+        align-items: flex-start;
+    }
+
+    .imagens-skills {
+        width: 20%;
+    }
+
+    .formacao-img {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 738px) {
+
+    .sobre-mim,
+    .apresentacao,
+    .projetos,
+    .skills,
+    .hobbies,
+    .formacao,
+    .email,
+    .cabecalho {
+        margin: 30px;
+        justify-content: flex-start;
+    }
+
+
+
+    .apresentacao {
+        margin-top: 100px;
+    }
+
+    .email-inputs {
+        width: 90%;
+    }
+
+
+    .cabecalho,
+    .cabecalho-menu {
+        margin: 0;
+        justify-content: flex-start;
+        height: 10vh;
+    }
+
+    .cabecalho h2 {
+        width: 100vw;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .imagens-projetos,
+    .formacao-img {
+        width: 100%;
+    }
+
+    .formacao {
+        height: 100%;
+    }
+
+    .formacao-img {
+        gap: 5%;
+    }
+}
